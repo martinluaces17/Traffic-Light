@@ -11,22 +11,24 @@ export function Home() {
 	return (
 		<div className="container">
 			<div id="barrita"></div>
-			<div id="semaforo">
+			<div
+				id="semaforo"
+				className="d-flex align-items-center flex-column bd-highlight mb-3">
 				<button
-					className={color == "red" ? color : ""}
+					className={"red " + (color == "red" ? "selected" : "")}
 					onClick={() => setColor("red")}>
 					Red
 				</button>
 				<button
-					className={color == "yellow" ? color : ""}
+					className={
+						"yellow " + (color == "yellow" ? "selected" : "")
+					}
 					onClick={() => setColor("yellow")}>
 					Yellow
 				</button>
 				<button
-					className={color == "green" ? color : ""}
-					onClick={() => setColor("green")}>
-					Green
-				</button>
+					className={"green " + (color == "green" ? "selected" : "")}
+					onClick={() => setColor("green")}></button>
 			</div>
 		</div>
 	);
