@@ -11,3 +11,31 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green{ 
+    background-color: green;
+}
+
+#barrita{
+  background-color: black;
+  width: 20px;
+  height: 150px;
+ 
+}
+
+#semaforo{
+  background-color: black;
+  width: 150px;
+  height: 350px;
+  
+  border-radius: 10px;
+  padding-top: 20px;
+}
